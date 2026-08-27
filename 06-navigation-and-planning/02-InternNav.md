@@ -1,5 +1,6 @@
 
-# 安装
+# 环境配置
+## 安装
 
 参考：[安装文档](https://internrobotics.github.io/user_guide/internnav/quick_start/installation.html)
 
@@ -70,3 +71,21 @@ pip uninstall -y setuptools-scm vcs-versioning
 pip check
 
 ```
+
+## 下载权重
+
+参考：[下载权重链接](https://internrobotics.github.io/user_guide/internnav/quick_start/installation.html#download-checkpoints)
+
+下载 [InternVLA-N1 pretrained Checkpoints](https://huggingface.co/InternRobotics/InternVLA-N1-DualVLN)
+
+```shell
+conda activate internnav
+cd /home/gm_wadefrankslam/fengxian/project/InternNav
+pip install -U huggingface_hub
+export HF_ENDPOINT=https://hf-mirror.com
+hf download InternRobotics/InternVLA-N1-DualVLN \
+    --local-dir checkpoints/InternVLA-N1-DualVLN
+```
+
+下载 [DepthAnything v2 Checkpoints](https://huggingface.co/depth-anything/Depth-Anything-V2-Metric-Hypersim-Small/resolve/main/depth_anything_v2_metric_hypersim_vits.pth)
+
