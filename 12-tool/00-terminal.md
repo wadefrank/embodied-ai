@@ -57,14 +57,6 @@ source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 sudo apt install zsh-autosuggestions
 # 在~/.zshrc添加以下内容
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-
-
-
-
-
-
-
 ```
 
 
@@ -101,22 +93,31 @@ sudo snap install ghostty --classic
 # 查看快捷键
 ghostty +list-keybinds --default
 
-# 左右分屏
-⌘ + D
-
-# 上下分屏
-⌘ + Shift + D
+# 分屏操作
+⌘ + Shift + R : 左右分屏
+⌘ + Shift + D : 上下分屏
+⌘ + Shift + C: 退出终端
 
 # 切换分屏
-⌘ + [
-⌘ + ]
-⌘ + alt + arrow_up
-⌘ + alt + arrow_down
-⌘ + alt + arrow_left
-⌘ + alt + arrow_right
+⌘ + Shift + J：切换到左侧分屏
+⌘ + Shift + L：切换到右侧分屏
+⌘ + Shift + I：切换到上方分屏
+⌘ + Shift + K：切换到下方分屏
+```
 
-# 关闭当前分屏
-⌘ + W
+### Ubuntu
+
+```shell
+# 分屏操作
+Alt + R : 左右分屏                                
+Alt + D : 上下分屏                           
+Alt + C : 退出终端
+
+# 切换分屏
+Alt + J：切换到左侧分屏
+Alt + L：切换到右侧分屏
+Alt + I：切换到上方分屏
+Alt + K：切换到下方分屏
 ```
 
 ## 外观
